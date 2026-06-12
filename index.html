@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Royal DS Taxi Service Goa - Premium AC taxi services across Goa. Airport transfers, sightseeing tours, outstation trips. Book now at 9359562239.">
+<meta name="keywords" content="Goa taxi service, airport transfer Goa, sightseeing Goa, premium cab Goa, Royal DS taxi">
+<meta property="og:title" content="Royal DS - Premium AC Taxi Services Across Goa">
+<meta property="og:description" content="Explore Goa in Comfort and Style. Professional drivers, clean vehicles, transparent pricing.">
+<title>Royal DS - Premium AC Taxi Services Across Goa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy-deep: #050810;
+    --navy: #0A0F1E;
+    --navy-mid: #0D1628;
+    --navy-card: #111827;
+    --navy-glass: rgba(10,15,30,0.72);
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-pale: #F5E9C8;
+    --gold-dim: rgba(201,168,76,0.15);
+    --gold-border: rgba(201,168,76,0.3);
+    --white: #FFFFFF;
+    --cream: #F5F0E8;
+    --text-muted: rgba(245,240,232,0.55);
+    --text-body: rgba(245,240,232,0.82);
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --shadow-gold: 0 0 40px rgba(201,168,76,0.12);
+    --shadow-card: 0 8px 40px rgba(0,0,0,0.45);
+    --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ============ SCROLLBAR ============ */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--navy-deep); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 5%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(5,8,16,0.0);
+    backdrop-filter: blur(0px);
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  nav.scrolled {
+    background: rgba(5,8,16,0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--gold-border);
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  .nav-logo-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    letter-spacing: 0.04em;
+  }
+  .nav-logo-sub {
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .nav-links {
+    display: flex;
+    gap: 2.2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-body);
+    font-size: 0.83rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color var(--transition);
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: width var(--transition);
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    padding: 9px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition);
+  }
+  .nav-cta:hover {
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--gold-light);
+    transition: all 0.3s ease;
+  }
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 72px; left: 0; right: 0;
+    background: rgba(5,8,16,0.97);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--gold-border);
+    padding: 1.5rem 5%;
+    z-index: 999;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--text-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+    transition: color var(--transition);
+  }
+  .mobile-menu a:hover { color: var(--gold-light); }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(5,8,16,0.92) 0%, rgba(10,15,30,0.75) 50%, rgba(5,8,16,0.88) 100%),
+      url('https://images.unsplash.com/photo-1590123715134-25c1b2d0d6b1?w=1800&q=80&auto=format') center/cover no-repeat;
+    will-change: transform;
+  }
+  .hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, var(--navy-deep) 100%);
+  }
+  .hero-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .particle {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: var(--gold);
+    border-radius: 50%;
+    opacity: 0;
+    animation: particleFloat linear infinite;
+  }
+
+  @keyframes particleFloat {
+    0% { opacity: 0; transform: translateY(100vh) scale(0); }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.3; }
+    100% { opacity: 0; transform: translateY(-10vh) scale(1.5); }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 5%;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 4rem;
+    align-items: center;
+    padding-top: 90px;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    padding: 7px 18px;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-eyebrow-dot {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+  .hero-eyebrow span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -0.01em;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+  .hero-title-accent {
+    color: var(--gold-light);
+    font-style: italic;
+  }
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+    font-weight: 300;
+    color: var(--text-body);
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+  }
+  .hero-rule {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    margin: 1.4rem 0;
+  }
+  .hero-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 480px;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .hero-stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .hero-stat-divider {
+    width: 1px;
+    background: var(--gold-border);
+    align-self: stretch;
+    margin: 0.2rem 0;
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, var(--gold), #A8832E);
+    color: var(--navy-deep);
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition);
+    box-shadow: 0 4px 20px rgba(201,168,76,0.35);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(201,168,76,0.5);
+  }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: transparent;
+    color: var(--cream);
+    padding: 13px 28px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(245,240,232,0.25);
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .btn-secondary:hover {
+    border-color: var(--gold-light);
+    color: var(--gold-light);
+    transform: translateY(-2px);
+  }
+  .btn-icon {
+    width: 18px; height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* ============ BOOKING CARD ============ */
+  .booking-card {
+    background: rgba(13,22,40,0.85);
+    backdrop-filter: blur(30px);
+    border: 1px solid var(--gold-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-gold), var(--shadow-card);
+    position: relative;
+    overflow: hidden;
+  }
+  .booking-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .booking-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gold-light);
+    margin-bottom: 0.3rem;
+    text-align: center;
+  }
+  .booking-card-sub {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .form-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+  .form-input, .form-select {
+    width: 100%;
+    background: rgba(5,8,16,0.6);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: var(--radius-sm);
+    padding: 11px 14px;
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23C9A84C' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    cursor: pointer;
+  }
+  .form-select option { background: var(--navy-card); color: var(--cream); }
+  .form-input:focus, .form-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+  }
+  .form-input::placeholder { color: rgba(245,240,232,0.3); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .form-submit {
+    width: 100%;
+    background: linear-gradient(135deg, var(--gold), #A8832E);
+    color: var(--navy-deep);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all var(--transition);
+    box-shadow: 0 4px 20px rgba(201,168,76,0.3);
+  }
+  .form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(201,168,76,0.5);
+  }
+  .booking-note {
+    text-align: center;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+
+  /* ============ SCROLL INDICATOR ============ */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    z-index: 2;
+    opacity: 0.6;
+  }
+  .scroll-text {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+  }
+  .scroll-line {
+    width: 1px;
+    height: 36px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollLine 1.8s ease-in-out infinite;
+  }
+  @keyframes scrollLine {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* ============ SECTIONS ============ */
+  section { padding: 6rem 5%; }
+  .container { max-width: 1320px; margin: 0 auto; }
+
+  .section-eyebrow {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+  }
+  .section-eyebrow::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 0.7rem;
+    height: 1px;
+    background: var(--gold);
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+  .section-title em {
+    color: var(--gold-light);
+    font-style: italic;
+  }
+  .section-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 560px;
+    line-height: 1.75;
+  }
+  .section-header { margin-bottom: 3.5rem; }
+  .section-header-center { text-align: center; }
+  .section-header-center .section-eyebrow { padding-left: 0; }
+  .section-header-center .section-eyebrow::before { display: none; }
+  .section-header-center .section-desc { margin: 0 auto; }
+
+  /* ============ SERVICES ============ */
+  .services { background: var(--navy-deep); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  .service-card {
+    background: var(--navy-card);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    transition: all var(--transition);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--gold-dim), transparent);
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+  .service-card:hover {
+    border-color: var(--gold-border);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4), var(--shadow-gold);
+  }
+  .service-card:hover::after { opacity: 1; }
+  .service-icon {
+    width: 48px; height: 48px;
+    background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .service-icon svg {
+    width: 22px; height: 22px;
+    stroke: var(--gold-light);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .service-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+  }
+  .service-desc {
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    position: relative;
+    z-index: 1;
+  }
+  .service-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 1rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: gap var(--transition);
+  }
+  .service-card:hover .service-arrow { gap: 0.7rem; }
+
+  /* ============ FLEET ============ */
+  .fleet { background: var(--navy-mid); }
+  .fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .fleet-card {
+    background: var(--navy-card);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: all var(--transition);
+  }
+  .fleet-card:hover {
+    border-color: var(--gold-border);
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.5), var(--shadow-gold);
+  }
+  .fleet-img-wrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  .fleet-img-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    filter: brightness(0.9) saturate(0.95);
+  }
+  .fleet-card:hover .fleet-img-wrap img { transform: scale(1.05); }
+  .fleet-badge {
+    position: absolute;
+    top: 12px; right: 12px;
+    background: rgba(5,8,16,0.82);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--gold-border);
+    border-radius: 100px;
+    padding: 4px 12px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+  }
+  .fleet-info { padding: 1.5rem; }
+  .fleet-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+  .fleet-type {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .fleet-specs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .fleet-spec {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .fleet-spec svg {
+    width: 14px; height: 14px;
+    stroke: var(--gold);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+  .fleet-book {
+    display: block;
+    margin-top: 1.2rem;
+    background: transparent;
+    border: 1px solid var(--gold-border);
+    color: var(--gold-light);
+    border-radius: var(--radius-sm);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all var(--transition);
+  }
+  .fleet-book:hover {
+    background: var(--gold);
+    color: var(--navy-deep);
+    border-color: var(--gold);
+  }
+
+  /* ============ TRUST ============ */
+  .trust { background: var(--navy-deep); }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: rgba(13,22,40,0.6);
+    border: 1px solid rgba(201,168,76,0.08);
+    border-radius: var(--radius-md);
+    transition: all var(--transition);
+  }
+  .trust-item:hover {
+    border-color: var(--gold-border);
+    background: var(--navy-card);
+    transform: translateY(-3px);
+  }
+  .trust-icon {
+    width: 60px; height: 60px;
+    background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+  .trust-icon svg {
+    width: 26px; height: 26px;
+    stroke: var(--gold-light);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .trust-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+    line-height: 1.35;
+  }
+  .trust-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonials { background: var(--navy-mid); }
+  .testimonials-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  .testimonials-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+  }
+  .testimonial-card {
+    flex: 0 0 calc(33.333% - 1rem);
+    margin-right: 1.5rem;
+    background: var(--navy-card);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: -10px; left: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: var(--gold);
+    opacity: 0.15;
+    line-height: 1;
+  }
+  .testimonial-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 1rem;
+  }
+  .star {
+    width: 14px; height: 14px;
+    fill: var(--gold);
+  }
+  .testimonial-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .testimonial-avatar {
+    width: 42px; height: 42px;
+    background: linear-gradient(135deg, var(--gold), #6B4F1A);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--navy-deep);
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .testimonial-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--cream);
+    margin-bottom: 0.15rem;
+  }
+  .testimonial-meta {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+  }
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .slider-btn {
+    width: 44px; height: 44px;
+    background: transparent;
+    border: 1px solid var(--gold-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .slider-btn svg {
+    width: 18px; height: 18px;
+    stroke: var(--gold-light);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .slider-btn:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  .slider-btn:hover svg { stroke: var(--navy-deep); }
+  .slider-dots {
+    display: flex;
+    gap: 8px;
+  }
+  .slider-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.25);
+    cursor: pointer;
+    transition: all var(--transition);
+    border: none;
+    padding: 0;
+  }
+  .slider-dot.active {
+    background: var(--gold);
+    transform: scale(1.2);
+  }
+
+  /* ============ CTA BANNER ============ */
+  .cta-banner {
+    background: linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(10,15,30,0.95) 50%, rgba(201,168,76,0.08) 100%);
+    border-top: 1px solid var(--gold-border);
+    border-bottom: 1px solid var(--gold-border);
+    padding: 4rem 5%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-banner::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-banner-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 0.6rem;
+    position: relative;
+  }
+  .cta-banner-sub {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .btn-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid rgba(245,240,232,0.2);
+    color: var(--cream);
+    padding: 13px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition);
+    letter-spacing: 0.04em;
+  }
+  .btn-phone:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+    transform: translateY(-2px);
+  }
+  .btn-phone svg {
+    width: 16px; height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--navy-deep);
+    border-top: 1px solid rgba(201,168,76,0.1);
+    padding: 3.5rem 5% 2rem;
+  }
+  .footer-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer-brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.3rem;
+  }
+  .footer-brand-sub {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  .footer-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+  }
+  .footer-contact a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-body);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    transition: color var(--transition);
+  }
+  .footer-contact a:hover { color: var(--gold-light); }
+  .footer-contact svg {
+    width: 15px; height: 15px;
+    stroke: var(--gold);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+  .footer-col-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  .footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color var(--transition);
+  }
+  .footer-links a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(201,168,76,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .footer-copy {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .footer-made {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  /* ============ FLOATING WA BUTTON ============ */
+  .floating-wa {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: #25D366;
+    color: white;
+    border-radius: 100px;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+    transition: all var(--transition);
+  }
+  .floating-wa:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(37,211,102,0.6);
+  }
+  .floating-wa svg {
+    width: 20px; height: 20px;
+    fill: white;
+    flex-shrink: 0;
+  }
+  .floating-wa-text { white-space: nowrap; }
+
+  /* ============ ANIMATIONS ============ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  .reveal-delay-5 { transition-delay: 0.5s; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1024px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding-top: 110px;
+      padding-bottom: 6rem;
+    }
+    .hero-desc { max-width: 100%; }
+    .testimonial-card { flex: 0 0 calc(50% - 0.75rem); }
+  }
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .nav-hamburger { display: flex; }
+    section { padding: 4rem 5%; }
+    .hero-stats { gap: 1.2rem; }
+    .hero-stat-value { font-size: 1.6rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .testimonial-card { flex: 0 0 calc(100% - 1.5rem); }
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .floating-wa-text { display: none; }
+    .floating-wa { padding: 14px; border-radius: 50%; }
+    .fleet-grid { grid-template-columns: 1fr; }
+    .trust-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .hero-buttons { flex-direction: column; }
+    .btn-primary, .btn-secondary { justify-content: center; }
+    .trust-grid { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo" aria-label="Royal DS Home">
+    <span class="nav-logo-main">Royal DS</span>
+    <span class="nav-logo-sub">Taxi Service Goa</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#fleet">Fleet</a></li>
+    <li><a href="#trust">Why Us</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+  </ul>
+  <a href="https://wa.me/919359562239?text=Hello%2C%20I%20want%20to%20book%20a%20taxi." class="nav-cta" target="_blank" rel="noopener">Book Now</a>
+  <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#fleet" onclick="closeMobile()">Fleet</a>
+  <a href="#trust" onclick="closeMobile()">Why Choose Us</a>
+  <a href="#reviews" onclick="closeMobile()">Reviews</a>
+  <a href="https://wa.me/919359562239?text=Hello%2C%20I%20want%20to%20book%20a%20taxi." target="_blank" rel="noopener">Book on WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home" aria-label="Hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow reveal">
+        <span class="hero-eyebrow-dot"></span>
+        <span>Goa's Premier Taxi Service</span>
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        <span class="hero-title-accent">Royal</span> DS
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">Premium AC Taxi Services Across Goa</p>
+      <div class="hero-rule reveal reveal-delay-2"></div>
+      <p class="hero-desc reveal reveal-delay-3">
+        Explore Goa in Comfort and Style. From sun-soaked beaches to vibrant markets, our professionally trained drivers take you everywhere in a clean, air-conditioned vehicle — on time, every time.
+      </p>
+      <div class="hero-stats reveal reveal-delay-3">
+        <div class="hero-stat">
+          <span class="hero-stat-value">4.9</span>
+          <span class="hero-stat-label">Star Rating</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">2000+</span>
+          <span class="hero-stat-label">Happy Customers</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">4+</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+      </div>
+      <div class="hero-buttons reveal reveal-delay-4">
+        <a href="https://wa.me/919359562239?text=Hello%2C%20I%20would%20like%20to%20book%20a%20taxi." class="btn-primary" target="_blank" rel="noopener">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:9359562239" class="btn-secondary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+
+    <!-- BOOKING FORM -->
+    <div class="booking-card reveal reveal-delay-2">
+      <div class="booking-card-title">Reserve Your Ride</div>
+      <div class="booking-card-sub">Instant Confirmation via WhatsApp</div>
+      <div class="form-group">
+        <label class="form-label" for="pickup">Pickup Location</label>
+        <input class="form-input" id="pickup" type="text" placeholder="Enter pickup address">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="drop">Drop Location</label>
+        <input class="form-input" id="drop" type="text" placeholder="Enter destination">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="travel-date">Travel Date</label>
+          <input class="form-input" id="travel-date" type="date">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="travel-time">Travel Time</label>
+          <input class="form-input" id="travel-time" type="time">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="service-type">Service Type</label>
+        <select class="form-select" id="service-type">
+          <option value="">Select a service</option>
+          <option>Airport Pickup &amp; Drop</option>
+          <option>Railway Station Transfer</option>
+          <option>North Goa Sightseeing</option>
+          <option>South Goa Sightseeing</option>
+          <option>Extreme North Goa Sightseeing</option>
+          <option>Extreme South Goa Sightseeing</option>
+          <option>Long Distance Taxi</option>
+          <option>Outstation Trip</option>
+          <option>Corporate Taxi Service</option>
+          <option>Disposal Duty</option>
+          <option>Minibus Service</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="vehicle-type">Vehicle Type</label>
+        <select class="form-select" id="vehicle-type">
+          <option value="">Select vehicle</option>
+          <option>Swift Dzire (Sedan)</option>
+          <option>Baleno (Hatchback)</option>
+          <option>Ertiga (MPV - 7 Seater)</option>
+          <option>Innova (SUV - 7 Seater)</option>
+          <option>Innova Crysta (Premium SUV)</option>
+          <option>Tempo Traveller (12+ Seater)</option>
+        </select>
+      </div>
+      <button class="form-submit" onclick="sendBookingToWhatsApp()">
+        Confirm Booking via WhatsApp
+      </button>
+      <p class="booking-note">No advance payment required. Confirm instantly.</p>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 class="section-title">Every Journey, <em>Handled with Care</em></h2>
+      <p class="section-desc">From quick airport transfers to full-day Goa explorations, we offer a complete range of premium taxi services tailored to your needs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/><path d="M17 3h4v4M21 3l-8 8"/></svg>
+        </div>
+        <div class="service-name">Airport Pickup &amp; Drop</div>
+        <p class="service-desc">Punctual, professional transfers to and from Goa International Airport. Flight tracking included.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20an%20airport%20transfer%20service." class="service-arrow" target="_blank" rel="noopener">
+          Book Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="service-name">Railway Station Transfer</div>
+        <p class="service-desc">Seamless pickups and drops at Madgaon, Thivim, and Karmali stations with live train tracking.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20a%20railway%20station%20transfer." class="service-arrow" target="_blank" rel="noopener">
+          Book Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div class="service-name">Corporate Taxi Service</div>
+        <p class="service-desc">Reliable, discreet executive transport for business professionals with fixed-rate corporate packages.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20corporate%20taxi%20service." class="service-arrow" target="_blank" rel="noopener">
+          Enquire Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 17l2-8h14l2 8M5 17h14M7 17v2M17 17v2M1 9h22"/></svg>
+        </div>
+        <div class="service-name">Long Distance Taxi</div>
+        <p class="service-desc">Comfortable, safe rides to Bangalore, Mumbai, Pune, Hyderabad, and all major cities from Goa.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20a%20long%20distance%20taxi." class="service-arrow" target="_blank" rel="noopener">
+          Book Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div class="service-name">North Goa Sightseeing</div>
+        <p class="service-desc">Baga, Calangute, Anjuna, Vagator, Chapora, Fort Aguada and more — a full-day curated tour.</p>
+        <a href="https://wa.me/919359562239?text=I%20want%20North%20Goa%20sightseeing." class="service-arrow" target="_blank" rel="noopener">
+          Book Tour <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <div class="service-name">South Goa Sightseeing</div>
+        <p class="service-desc">Colva, Benaulim, Palolem, Majorda Beach, Dudhsagar Falls — South Goa's tranquil beauty awaits.</p>
+        <a href="https://wa.me/919359562239?text=I%20want%20South%20Goa%20sightseeing." class="service-arrow" target="_blank" rel="noopener">
+          Book Tour <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+        </div>
+        <div class="service-name">Extreme North Goa Tour</div>
+        <p class="service-desc">Arambol, Mandrem, Querim Beach, Tiracol Fort — the untouched northern frontier of Goa.</p>
+        <a href="https://wa.me/919359562239?text=I%20want%20Extreme%20North%20Goa%20sightseeing." class="service-arrow" target="_blank" rel="noopener">
+          Book Tour <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+        </div>
+        <div class="service-name">Extreme South Goa Tour</div>
+        <p class="service-desc">Agonda, Betul, Cabo de Rama — discover the hidden gem beaches at the southern edge of Goa.</p>
+        <a href="https://wa.me/919359562239?text=I%20want%20Extreme%20South%20Goa%20sightseeing." class="service-arrow" target="_blank" rel="noopener">
+          Book Tour <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="service-name">Outstation Pickup &amp; Drop</div>
+        <p class="service-desc">Inter-city travel between Goa and neighboring states with experienced long-route drivers.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20an%20outstation%20trip." class="service-arrow" target="_blank" rel="noopener">
+          Book Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div class="service-name">Disposal Duty</div>
+        <p class="service-desc">Full-day or half-day cab at your disposal. Explore at your own pace with a dedicated driver and vehicle.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20a%20disposal%20duty%20cab." class="service-arrow" target="_blank" rel="noopener">
+          Enquire Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="service-name">Minibus Taxi Service</div>
+        <p class="service-desc">Spacious Tempo Travellers for groups, family trips, weddings, and corporate events across Goa.</p>
+        <a href="https://wa.me/919359562239?text=I%20need%20a%20minibus%20for%20a%20group%20trip." class="service-arrow" target="_blank" rel="noopener">
+          Book Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section class="fleet" id="fleet">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-eyebrow">Our Fleet</span>
+      <h2 class="section-title">Vehicles Chosen for <em>Comfort</em></h2>
+      <p class="section-desc">Every vehicle in our fleet is fully air-conditioned, well-maintained, and cleaned before each journey — because your comfort is our standard.</p>
+    </div>
+    <div class="fleet-grid">
+      <div class="fleet-card reveal reveal-delay-1">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=75&auto=format" alt="Swift Dzire sedan" loading="lazy">
+          <span class="fleet-badge">Most Popular</span>
+        </div>
+        <div class="fleet-info">
+          <div class="fleet-name">Swift Dzire</div>
+          <div class="fleet-type">Compact Sedan</div>
+          <div class="fleet-specs">
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              4 Passengers
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              AC
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              2 Bags
+            </span>
+          </div>
+          <a href="https://wa.me/919359562239?text=I%20want%20to%20book%20a%20Swift%20Dzire." class="fleet-book" target="_blank" rel="noopener">Book This Vehicle</a>
+        </div>
+      </div>
+      <div class="fleet-card reveal reveal-delay-2">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?w=600&q=75&auto=format" alt="Ertiga MPV" loading="lazy">
+          <span class="fleet-badge">Family Favourite</span>
+        </div>
+        <div class="fleet-info">
+          <div class="fleet-name">Ertiga</div>
+          <div class="fleet-type">Multi-Purpose Vehicle</div>
+          <div class="fleet-specs">
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              7 Passengers
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              AC
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              3 Bags
+            </span>
+          </div>
+          <a href="https://wa.me/919359562239?text=I%20want%20to%20book%20an%20Ertiga." class="fleet-book" target="_blank" rel="noopener">Book This Vehicle</a>
+        </div>
+      </div>
+      <div class="fleet-card reveal reveal-delay-3">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=75&auto=format" alt="Baleno hatchback" loading="lazy">
+          <span class="fleet-badge">Economy Choice</span>
+        </div>
+        <div class="fleet-info">
+          <div class="fleet-name">Baleno</div>
+          <div class="fleet-type">Premium Hatchback</div>
+          <div class="fleet-specs">
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              4 Passengers
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              AC
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              2 Bags
+            </span>
+          </div>
+          <a href="https://wa.me/919359562239?text=I%20want%20to%20book%20a%20Baleno." class="fleet-book" target="_blank" rel="noopener">Book This Vehicle</a>
+        </div>
+      </div>
+      <div class="fleet-card reveal reveal-delay-1">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&q=75&auto=format" alt="Toyota Innova SUV" loading="lazy">
+          <span class="fleet-badge">Premium SUV</span>
+        </div>
+        <div class="fleet-info">
+          <div class="fleet-name">Innova</div>
+          <div class="fleet-type">Premium SUV</div>
+          <div class="fleet-specs">
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              7 Passengers
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              AC
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              4 Bags
+            </span>
+          </div>
+          <a href="https://wa.me/919359562239?text=I%20want%20to%20book%20an%20Innova." class="fleet-book" target="_blank" rel="noopener">Book This Vehicle</a>
+        </div>
+      </div>
+      <div class="fleet-card reveal reveal-delay-2">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=75&auto=format" alt="Innova Crysta luxury SUV" loading="lazy">
+          <span class="fleet-badge">Luxury Choice</span>
+        </div>
+        <div class="fleet-info">
+          <div class="fleet-name">Innova Crysta</div>
+          <div class="fleet-type">Luxury SUV</div>
+          <div class="fleet-specs">
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              7 Passengers
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              AC
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              4 Bags
+            </span>
+          </div>
+          <a href="https://wa.me/919359562239?text=I%20want%20to%20book%20an%20Innova%20Crysta." class="fleet-book" target="_blank" rel="noopener">Book This Vehicle</a>
+        </div>
+      </div>
+      <div class="fleet-card reveal reveal-delay-3">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&q=75&auto=format" alt="Tempo Traveller group vehicle" loading="lazy">
+          <span class="fleet-badge">Group Travel</span>
+        </div>
+        <div class="fleet-info">
+          <div class="fleet-name">Tempo Traveller</div>
+          <div class="fleet-type">Minibus — 12 Seater</div>
+          <div class="fleet-specs">
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              12+ Passengers
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              AC
+            </span>
+            <span class="fleet-spec">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              Large Cargo
+            </span>
+          </div>
+          <a href="https://wa.me/919359562239?text=I%20want%20to%20book%20a%20Tempo%20Traveller." class="fleet-book" target="_blank" rel="noopener">Book This Vehicle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust" id="trust">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-eyebrow">Why Choose Us</span>
+      <h2 class="section-title">The Royal DS <em>Promise</em></h2>
+      <p class="section-desc">We don't just drive you — we deliver an experience worth talking about. Here is why thousands of travelers choose us.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal reveal-delay-1">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="trust-title">Clean &amp; Well Maintained Cars</div>
+        <p class="trust-desc">Every vehicle is sanitized and inspected before your journey begins.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-2">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="trust-title">Professional &amp; Friendly Drivers</div>
+        <p class="trust-desc">Uniformed, background-verified drivers who know Goa inside out.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-3">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="trust-title">Always On-Time Service</div>
+        <p class="trust-desc">We track your flight or train and arrive early — no waiting, no stress.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-1">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <div class="trust-title">Reasonable &amp; Transparent Pricing</div>
+        <p class="trust-desc">Fixed fares with no hidden charges. What you see is what you pay.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-2">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        </div>
+        <div class="trust-title">24/7 Customer Support</div>
+        <p class="trust-desc">Available round the clock via WhatsApp and phone for any queries.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-3">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <div class="trust-title">Fully Air-Conditioned Fleet</div>
+        <p class="trust-desc">Beat the Goa heat in every vehicle — every single seat, always cool.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="testimonials" id="reviews">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-eyebrow">Testimonials</span>
+      <h2 class="section-title">What Our <em>Guests Say</em></h2>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">Professional drivers and spotless vehicles. Took the North Goa tour with my family and the driver was incredibly knowledgeable about every location. Absolutely five stars.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Rahul Mehta</div>
+              <div class="testimonial-meta">Mumbai — North Goa Tour</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">Excellent airport transfer service. Our flight was delayed by two hours and the driver still waited without any fuss. That kind of reliability is rare. Highly recommend Royal DS.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #2E86AB, #1A4F6E);">P</div>
+            <div>
+              <div class="testimonial-name">Priya Sharma</div>
+              <div class="testimonial-meta">Delhi — Airport Transfer</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">Comfortable sightseeing experience across Goa. The Innova Crysta was pristine and the driver covered all our favorite spots. Fair prices and zero hidden costs. We are regulars now.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #6B4F1A, #4A3310);">A</div>
+            <div>
+              <div class="testimonial-name">Ananya &amp; Family</div>
+              <div class="testimonial-meta">Bangalore — Full Day Tour</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">Used Royal DS for our corporate team offsite. Six cars, perfectly coordinated. The team was punctual, polished and handled everything without a single issue. Outstanding service.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #1B4332, #0D2B1F);">S</div>
+            <div>
+              <div class="testimonial-name">Siddharth Nair</div>
+              <div class="testimonial-meta">Pune — Corporate Event</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">The Tempo Traveller for our group trip was clean, well-maintained and the driver was incredibly patient with our large group. South Goa has never looked more beautiful. Thank you!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #7C3AED, #4C1D95);">K</div>
+            <div>
+              <div class="testimonial-name">Kavya &amp; Friends</div>
+              <div class="testimonial-meta">Hyderabad — Group Sightseeing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="sliderPrev" aria-label="Previous testimonial">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn" id="sliderNext" aria-label="Next testimonial">
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2 class="cta-banner-title">Ready to Explore Goa?</h2>
+  <p class="cta-banner-sub">Reach us instantly on WhatsApp or give us a call — we are available 24 hours a day.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/919359562239?text=Hello%2C%20I%20would%20like%20to%20book%20a%20taxi." class="btn-primary" target="_blank" rel="noopener">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Book on WhatsApp
+    </a>
+    <a href="tel:9359562239" class="btn-phone">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+      9359562239
+    </a>
+    <a href="tel:9019248763" class="btn-phone">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+      9019248763
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">Royal DS</div>
+      <div class="footer-brand-sub">Taxi Service Goa</div>
+      <p class="footer-tagline">Your Journey, Our Responsibility.</p>
+      <div class="footer-contact">
+        <a href="tel:9359562239">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          +91 93595 62239
+        </a>
+        <a href="tel:9019248763">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          +91 90192 48763
+        </a>
+        <a href="https://wa.me/919359562239" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services">Airport Transfers</a></li>
+        <li><a href="#services">Railway Transfers</a></li>
+        <li><a href="#services">North Goa Sightseeing</a></li>
+        <li><a href="#services">South Goa Sightseeing</a></li>
+        <li><a href="#services">Outstation Trips</a></li>
+        <li><a href="#services">Corporate Services</a></li>
+        <li><a href="#services">Minibus Rental</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Fleet</div>
+      <ul class="footer-links">
+        <li><a href="#fleet">Swift Dzire</a></li>
+        <li><a href="#fleet">Ertiga</a></li>
+        <li><a href="#fleet">Baleno</a></li>
+        <li><a href="#fleet">Innova</a></li>
+        <li><a href="#fleet">Innova Crysta</a></li>
+        <li><a href="#fleet">Tempo Traveller</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Royal DS Taxi Service Goa. All rights reserved.</p>
+    <p class="footer-made">Goa, India — Available 24/7</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919359562239?text=Hello%2C%20I%20would%20like%20to%20book%20a%20taxi." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="floating-wa-text">Chat with Us</span>
+</a>
+
+<script>
+  // NAV SCROLL
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // HAMBURGER
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  hamburger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() { mobileMenu.classList.remove('open'); }
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !mobileMenu.contains(e.target)) closeMobile();
+  });
+
+  // PARTICLES
+  const particleContainer = document.getElementById('heroParticles');
+  for (let i = 0; i < 22; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `
+      left: ${Math.random() * 100}%;
+      width: ${Math.random() * 3 + 1}px;
+      height: ${Math.random() * 3 + 1}px;
+      animation-duration: ${Math.random() * 12 + 10}s;
+      animation-delay: ${Math.random() * 8}s;
+      opacity: ${Math.random() * 0.5 + 0.1};
+    `;
+    particleContainer.appendChild(p);
+  }
+
+  // PARALLAX HERO BG
+  const heroBg = document.getElementById('heroBg');
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        if (scrollY < window.innerHeight) {
+          heroBg.style.transform = `translateY(${scrollY * 0.3}px)`;
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // BOOKING WHATSAPP
+  function sendBookingToWhatsApp() {
+    const pickup = document.getElementById('pickup').value.trim();
+    const drop = document.getElementById('drop').value.trim();
+    const date = document.getElementById('travel-date').value;
+    const time = document.getElementById('travel-time').value;
+    const service = document.getElementById('service-type').value;
+    const vehicle = document.getElementById('vehicle-type').value;
+
+    if (!pickup || !drop) {
+      alert('Please enter pickup and drop locations.');
+      return;
+    }
+
+    const formatDate = (d) => {
+      if (!d) return 'Not specified';
+      const parts = d.split('-');
+      return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    };
+
+    const formatTime = (t) => {
+      if (!t) return 'Not specified';
+      const [h, m] = t.split(':');
+      const hour = parseInt(h);
+      const ampm = hour >= 12 ? 'PM' : 'AM';
+      const displayHour = hour % 12 || 12;
+      return `${displayHour}:${m} ${ampm}`;
+    };
+
+    const msg = `Hello Royal DS Taxi Service,\n\nI would like to make a booking:\n\n` +
+      `Pickup: ${pickup}\n` +
+      `Drop: ${drop}\n` +
+      `Date: ${formatDate(date)}\n` +
+      `Time: ${formatTime(time)}\n` +
+      `Service: ${service || 'Not specified'}\n` +
+      `Vehicle: ${vehicle || 'Not specified'}\n\n` +
+      `Please confirm availability and fare. Thank you.`;
+
+    window.open(`https://wa.me/919359562239?text=${encodeURIComponent(msg)}`, '_blank');
+  }
+
+  // TESTIMONIALS SLIDER
+  const track = document.getElementById('testimonialsTrack');
+  const dotsContainer = document.getElementById('sliderDots');
+  const cards = track.querySelectorAll('.testimonial-card');
+  let currentSlide = 0;
+  let slidesPerView = getSlidesPerView();
+  let totalSlides = Math.ceil(cards.length / slidesPerView);
+  let autoSlideTimer;
+
+  function getSlidesPerView() {
+    if (window.innerWidth < 768) return 1;
+    if (window.innerWidth < 1024) return 2;
+    return 3;
+  }
+
+  function getCardWidth() {
+    const containerWidth = track.parentElement.offsetWidth;
+    const gap = 24;
+    return (containerWidth - gap * (slidesPerView - 1)) / slidesPerView;
+  }
+
+  function updateSlider() {
+    const cardW = getCardWidth();
+    const gap = 24;
+    const offset = currentSlide * (cardW + gap) * slidesPerView;
+    track.style.transform = `translateX(-${offset}px)`;
+    track.querySelectorAll('.testimonial-card').forEach((c, i) => {
+      c.style.flex = `0 0 ${cardW}px`;
+    });
+    dotsContainer.querySelectorAll('.slider-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Slide ${i + 1}`);
+      dot.addEventListener('click', () => { currentSlide = i; updateSlider(); resetAutoSlide(); });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlideTimer);
+    autoSlideTimer = setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    }, 4500);
+  }
+
+  document.getElementById('sliderNext').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider(); resetAutoSlide();
+  });
+  document.getElementById('sliderPrev').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider(); resetAutoSlide();
+  });
+
+  window.addEventListener('resize', () => {
+    const newSPV = getSlidesPerView();
+    if (newSPV !== slidesPerView) {
+      slidesPerView = newSPV;
+      totalSlides = Math.ceil(cards.length / slidesPerView);
+      currentSlide = 0;
+      buildDots();
+    }
+    updateSlider();
+  });
+
+  buildDots();
+  updateSlider();
+  resetAutoSlide();
+
+  // TOUCH SWIPE ON SLIDER
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      currentSlide = diff > 0
+        ? (currentSlide + 1) % totalSlides
+        : (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlider(); resetAutoSlide();
+    }
+  });
+
+  // REVEAL ON SCROLL
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => revealObserver.observe(el));
+
+  // SET DATE MIN
+  const dateInput = document.getElementById('travel-date');
+  if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.min = today;
+    dateInput.value = today;
+  }
+</script>
+</body>
+</html>
